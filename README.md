@@ -24,7 +24,7 @@ Please access the "Rocket Turbine Studio.pdf" in the files for a description of 
 - Thermodynamic calculations for nozzle efficiency, mechanical efficiency, and total-to-total turbine efficiency.
 - Velocity triangle calculations for inlet and outlet of stator and rotors.
 - Custom vortex law implementations from free vortex to exponential vortex.
-- Aids initial design using the more intuitive eleven parameter rotor target generation from Pritchard on which Sudhofs parameters are fitted.
+- Aids initial design using the more intuitive eleven parameter rotor target generation (user inputs smaller set of rotor inputs and the program generates the rest) from Pritchard on which Sudhofs parameters are fitted.
 - Direct Sudhof rotor and stator section generation.
 - Root, mean, and tip section generation.
 - Cylindrical projection and spanwise quadratic lofting.
@@ -45,7 +45,7 @@ The studio performs:
 6. Once run, the program produces plots of blade angle spanwise distributions, spanwise reaction, stator and rotor cross sections (including those with stagger visualised from root to tip), and a 3D visual rotor blisk with stators positioned upstream.
 7. Can set the CAD generation to true for .IGES file outputs.
 
-Choosing initial values for Sudhof's rotor parameters is difficult. To counteract this, the user can provide the simpler eleven required parameters to generate a Pritchard rotor, to which the Sudhof rotor is fitted using a custom algorithm which matches curvatures and tangents. The output can sometimes be off on the order of millimetres, but this is fine as this rotor is just the initial shape. Once the Sudhof rotor is fitted, its input parameters are shown in MATLAB's Command Window, which can then be used to to supply the rotor geometry to a CFD program for further optimisation of the curves on leading edge, trailing edge, suction, and pressure surfaces. After CFD optimisation, the new Sudhof inputs can be fed back into the studio to generate a CAD geometry of the final rotor (or stator) shape. The convention used is shown below in Fig. 1 and 2, and more in-depth in "Rocket Turbine Studio.pdf" (please refer to it before using the studio).
+Choosing initial values for Sudhof's rotor parameters is difficult. To counteract this, the user can provide the simpler eleven required parameters to generate a Pritchard rotor (user inputs smaller set of rotor inputs and the program generates the rest), to which the Sudhof rotor is fitted using a custom algorithm which matches geometric, tangent, and curvature conditions. The output can sometimes be off on the order of millimetres, but this is fine as this rotor is just the initial shape. Once the Sudhof rotor is fitted, its input parameters are shown in MATLAB's Command Window, which can then be used to to supply the rotor geometry to a CFD program for further optimisation of the curves on leading edge, trailing edge, suction, and pressure surfaces. After CFD optimisation, the new Sudhof inputs can be fed back into the studio to generate a CAD geometry of the final rotor (or stator) shape. The convention used is shown below in Fig. 1 and 2, and more in-depth in "Rocket Turbine Studio.pdf" (please refer to it before using the studio).
 
 
 <img width="1297" height="902" alt="image" src="https://github.com/user-attachments/assets/f0b4c24e-6c56-4944-82a3-a98adf4ac6f7" />
