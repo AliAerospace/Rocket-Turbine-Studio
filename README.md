@@ -99,6 +99,7 @@ On line 11 in runAliAerospaceRocketTurbineStudio.m, set generate_IGES = true; fo
 Do not mix metres and millimetres. The workflow expects "cycle.d_m" in millimetres while thermodynamic quantities such as pressure, temperature, and velocity are SI.
 
 ## Rotor and stator convention
+Refer to "Rocket Turbine Studio.pdf" for nomenclature and other important descriptions.
 
 <img width="746" height="1079" alt="image" src="https://github.com/user-attachments/assets/2da56a28-6f81-4fea-934c-49173476f468" />
 
