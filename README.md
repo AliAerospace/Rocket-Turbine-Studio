@@ -65,7 +65,7 @@ Refer to "Rocket_Turbine_Studio.pdf".
 MATLAB toolboxes required:
 
 - NURBS toolbox (NURBS Toolbox by D.M. Spink) .
-- IGES toolbox (igesout).
+- IGES toolbox (igesout updated).
   
 ## Installation
 
