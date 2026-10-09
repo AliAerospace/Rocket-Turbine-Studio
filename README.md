@@ -104,6 +104,15 @@ Refer to "Rocket_Turbine_Studio.pdf" for nomenclature and other important descri
 <img width="746" height="1079" alt="image" src="https://github.com/user-attachments/assets/2da56a28-6f81-4fea-934c-49173476f468" />
 
 
+## CFD performed on unoptimised turbine
+Used the code to generate the stator and rotor. Meshed periodic passages with Ansys TurboGrid. Used Ansys Fluent's Turbo Workflow.
+
+Using a large initial 1 mm rotor tip clearance, 875 K turbine inlet temperature, and rotor speed of 24000 rpm. CFD predicted a mass flow rate of approximately 2.8 kg/s, within 3.7% of the 2.7 kg/s meanline prediction. Achieved total-pressure ratio (P_04/P01) of approximately 0.55, compared with a design value of 0.472 (reduction likely due to large rotor tip clearance).
+
+
+<img width="1704" height="883" alt="image" src="https://github.com/user-attachments/assets/ebd4a9f7-4092-49f5-9d7d-d19bedc2b99c" />
+
+<img width="1711" height="922" alt="image" src="https://github.com/user-attachments/assets/2f03ea78-c7a6-44aa-a46e-4aeb10d04344" />
 
 
 ## References
